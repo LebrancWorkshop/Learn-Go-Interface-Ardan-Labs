@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func MaxInts(values []int) (int, error) {
+func Max[T int | float64](values []T) (T, error) {
 	if len(values) == 0 {
 		return 0, fmt.Errorf("empty slice")
 	}

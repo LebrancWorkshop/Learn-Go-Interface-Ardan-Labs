@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	max, err := interfaces.MaxInts([]int{1, 3, 2, 5, 7, 2})
+	max, err := interfaces.Max([]int{8, 1, 9, 2, 3})
 	if err != nil {
 		log.Fatal(err)
 	}
